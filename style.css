@@ -1,0 +1,89 @@
+/*HTML*/
+
+:root {
+    --fondo: #e9eaef;
+    --primario: #ffffff;
+    --secundario: #1b1c1e;
+    --terciario :#00d296;
+    --fuente_primaria: 'Krub', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-color: var(--fondo);
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+h1,h2,h3{
+    text-align: center;
+    font-family: var(--funte_primaria);
+    color: var(--secundario);
+}
+
+h1 { font-size: 4rem; 
+    text-transform: uppercase;
+    font-weight: bold;}
+h2 { font-size: 3.2rem;}
+h3 { font-size: 2.4rem;}
+p { font-size: 1.8rem;}
+
+.sombra{
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(138,136,138,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(138,136,138,1);
+    box-shadow: 5px 5px 5px 0px rgba(138,136,138,1);
+    background-color: var(--primario);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin: 1rem auto 1rem auto;
+}
+
+.sombra__2{
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(199,199,199,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(199,199,199,1);
+    box-shadow: 5px 5px 5px 0px rgba(199,199,199,1);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto 2rem auto;
+    background-color: var(--secundario)
+}
+
+/*Boton*/
+.boton{
+    background-color: var(--terciario);
+    color:var(--primario);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 768px ) {
+    .boton{
+        width: auto;
+    }
+}
